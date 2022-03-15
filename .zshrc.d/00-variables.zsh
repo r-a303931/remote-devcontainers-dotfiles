@@ -1,7 +1,7 @@
 export PATH=$PATH:~/.dotnet/tools:$HOME/bin:$HOME/.emacs.d/bin:$HOME/.npm-global/bin:$HOME/.local/bin:/var/lib/snapd/snap/bin:$HOME/programs/act
 export JAVA_HOME=/usr/lib/jvm/jre-11-openjdk
 
-export ZSH="/home/arioux/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 export ZSH_THEME="crunch"
 export plugins=(
 	git
