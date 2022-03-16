@@ -9,6 +9,7 @@ export plugins=(
 	sudo
 	docker
 	docker-compose
+	kubernetes
 )
 export TERM="xterm-256color"
 
