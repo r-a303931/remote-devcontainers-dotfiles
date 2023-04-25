@@ -1,5 +1,6 @@
 #!/bin/bash
 
+sudo apt update
 sudo apt install -y zsh exa neovim
 
 KEEP_ZSH=yes CHSH=no sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
