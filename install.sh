@@ -1,7 +1,13 @@
 #!/bin/bash
 
-sudo apt update
-sudo apt install -y zsh exa neovim
+if which apt;
+then
+    sudo apt update
+    sudo apt install -y zsh exa neovim
+elif which apk;
+then
+    sudo apk add curl zsh exa neovim
+fi
 
 KEEP_ZSH=yes CHSH=no sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
