@@ -13,3 +13,4 @@ KEEP_ZSH=yes CHSH=no sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/
 
 cp .zshrc $HOME
 cp -r .zshrc.d $HOME
+sudo chsh -s /usr/bin/zsh $USER
