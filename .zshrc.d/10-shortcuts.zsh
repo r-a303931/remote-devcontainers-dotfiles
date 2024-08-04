@@ -1,10 +1,9 @@
-alias :e="nvim"
-alias v="nvim"
-alias vim="nvim"
+alias :e="code"
+alias v="code"
+alias vim="code"
 alias Fmt=fmt # Used in Vim, as I mistype !fmt as !Fmt sometimes...
 
 alias grep='grep --color=always'
-alias xclip='xclip -selection clipboard'
 
 # Git aliases
 alias a="git add"

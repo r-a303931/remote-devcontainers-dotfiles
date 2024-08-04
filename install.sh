@@ -3,10 +3,10 @@
 if which apt;
 then
     sudo apt update
-    sudo apt install -y zsh exa neovim tmux
+    sudo apt install -y zsh exa
 elif which apk;
 then
-    sudo apk add curl zsh exa neovim tmux
+    sudo apk add curl zsh exa
 fi
 
 KEEP_ZSH=yes CHSH=no sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -15,7 +15,7 @@ cp .zshrc $HOME
 cp -r .zshrc.d $HOME
 sudo chsh -s /usr/bin/zsh $USER
 
-WAKATIME_KEY="$(curl https://wakatime-key.svc.arioux.org/arioux-key | tr -d '[:space:]')"
+WAKATIME_KEY="$(curl https://wakatime-key.svc.riouxs.co/arioux-key | tr -d '[:space:]')"
 cat - <<EOF > ~/.wakatime.cfg
 [settings]
 debug         = true
